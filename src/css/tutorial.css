@@ -1,0 +1,60 @@
+:root {
+  --primary-bg-color: #0d0d16;
+  --secondary-bg-color: #2b002b;
+  --draggable-border-color: #ff00ff;
+  --dropzone-border-color: #00ff3c;
+  --text-color: #fff;
+  --hover-bg-color: #2b002b;
+  --dropzone-text-color: #28a745;
+}
+
+/* Base styles for div elements */
+div {
+  box-sizing: border-box;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+div[draggable] {
+  margin-top: 1rem;
+}
+
+/* Styling for draggable source elements */
+#source {
+  width: 300px;
+  font-weight: bold;
+  line-height: 50px;
+  background-color: var(--primary-bg-color);
+  border: 3px dashed var(--draggable-border-color);
+  border-radius: 8px;
+  cursor: grab;
+}
+
+/* Hover effect for draggable elements */
+#source:hover {
+  background-color: var(--hover-bg-color);
+}
+
+/* Styling for drop zones */
+#destination {
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  min-height: 200px;
+  color: var(--dropzone-text-color);
+  background-color: var(--primary-bg-color);
+  border: 3px dashed var(--dropzone-border-color);
+  border-radius: 8px;
+}
+
+#destination div {
+  background-color: var(--secondary-bg-color);
+  border: 3px dashed var(--draggable-border-color);
+}
+
+strong {
+  color: var(--text-color);
+}

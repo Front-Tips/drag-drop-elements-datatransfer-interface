@@ -1,0 +1,32 @@
+:root {
+  --background-color: #181824;
+  --text-color: #fff;
+
+  --scrollbar-thumb-color: #fff;
+  --scrollbar-track-color: #0d0d18;
+  --scrollbar-width: 15px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding-top: 2rem;
+  margin: auto;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  cursor: default;
+}
